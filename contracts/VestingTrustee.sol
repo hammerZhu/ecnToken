@@ -4,11 +4,11 @@ import './SafeMath.sol';
 import './Ownable.sol';
 import './EcnToken.sol';
 
-/// @title Vesting trustee contract for Kin token.
+/// @title Vesting trustee contract for Ecn token.
 contract VestingTrustee is Ownable {
     using SafeMath for uint256;
 
-    // Kin token contract.
+    // Ecn token contract.
     EcnToken public ecn;
 
     // Vesting grant for a speicifc holder.

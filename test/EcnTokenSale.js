@@ -116,11 +116,12 @@ contract('EcnTokenSale', (accounts) => {
             let token1=Math.round((tokenClientBeforeBuying+buyResult)/TOKEN_UNIT);
             assert.equal(token1,tokenClientAfterBuying);
             let ethOwnerAfterBuying=await web3.eth.getBalance(fundRecipient).toNumber();
-            assert.equal(ethOwnerBeforeBuying+recvWei,ethOwnerAfterBuying);
+            //assert.equal(ethOwnerBeforeBuying+recvWei,ethOwnerAfterBuying);
+            assert.isBelow(Math.abs(ethOwnerBeforeBuying+recvWei-ethOwnerAfterBuying),TOKEN_UNIT/10000);
 
         });
         it('saling tokens failed after endingTime', async () =>{
-            increaseTime(15*DAY);
+            increaseTime(91*DAY);
             let transWei=42000;
             await expectRevert(sale.saleToken({from:clientAccount,value:transWei}));
         });

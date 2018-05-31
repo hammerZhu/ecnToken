@@ -15,5 +15,6 @@ unify ../contracts/BasicToken.sol
 unify ../contracts/TokenHolder.sol
 unify ../contracts/EcnToken.sol
 unify ../contracts/VestingTrustee.sol
-unify ../contracts/KinTokenSale.sol
-unify ../contracts/KinFoundationVestingTrustee.sol
+unify ../contracts/EcnTokenSaleMultl.sol
+unify ../contracts/EcnTokenSale.sol
+

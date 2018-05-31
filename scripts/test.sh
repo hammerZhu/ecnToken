@@ -18,3 +18,5 @@ fi
 
 # Now run truffle test.
 truffle test "$@"
+
+

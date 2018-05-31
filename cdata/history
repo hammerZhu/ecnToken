@@ -1,0 +1,15 @@
+accounts
+eth.accounts
+miner.start
+miner.start()
+eth.getBalance("0xea1ec590710dcfe05a1ed28e785ae94ca6e33bd8")
+miner.stop()
+miner.start()
+personal.lockAccount("0xea1ec590710dcfe05a1ed28e785ae94ca6e33bd8");
+quit
+miner.start()
+eth.accounts()
+eth.accounts
+miner.start()
+version
+version()

@@ -1,8 +1,8 @@
 # Ecn Token Contracts
 
-Here be smart contracts for the [Ecn token][kin token].
+Here be smart contracts for the [Ecn token][ecn token].
 
-![Ecn Token](kin.png)
+![Ecn Token](ecn.png)
 
 Ecn is a cryptocurrency built on top of the [Ethereum][ethereum] blockchain.
 It is envisioned as a general purpose cryptocurrency for use in everyday digital services such as chat, social media, and payments.
@@ -38,7 +38,7 @@ $ truffle test
 
 ```
 
-[ecn token]: https://kin.kik.com
+[ecn token]: https://ecn.tikteck.com
 [ethereum]: https://www.ethereum.org/
 
 [solidity]: https://solidity.readthedocs.io/en/develop/

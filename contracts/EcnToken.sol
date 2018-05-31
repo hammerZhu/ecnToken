@@ -5,14 +5,14 @@ import './SafeMath.sol';
 import './BasicToken.sol';
 import './TokenHolder.sol';
 
-/// @title Kin token contract.
+/// @title Ecn token contract.
 contract EcnToken is Ownable, BasicToken, TokenHolder {
     using SafeMath for uint256;
 
     string public constant name = "Ecn";
     string public constant symbol = "ECN";
 
-    // Using same decimal value as ETH (makes ETH-KIN conversion much easier).
+    // Using same decimal value as ETH (makes ETH-ECN conversion much easier).
     uint8 public constant decimals = 18;
 
     uint256 public constant max_coins =10**27;
