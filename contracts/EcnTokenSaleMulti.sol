@@ -146,7 +146,7 @@ contract EcnTokenSaleMulti is Ownable, TokenHolder {
 
         //find a blank item
          uint blankIndex = MAX_NUM_OF_SALEITEM;
-         for(uint i = 0;i < MAX_NUM_OF_SALEITEM; i ++){
+         for(uint i = 0; i < MAX_NUM_OF_SALEITEM; i ++){
              if(0 == saleItem[i].value){
                  blankIndex = i;
                  break;
@@ -168,7 +168,7 @@ contract EcnTokenSaleMulti is Ownable, TokenHolder {
     function checkAvailTokens() constant returns (uint256){
         uint256 totalTokens = 0;
         for(uint i = 0; i < MAX_NUM_OF_SALEITEM; i ++){
-            if(saleItem[i].value>0  && now > saleItem[i].timeAvail && saleItem[i].user == msg.sender){
+            if(saleItem[i].value > 0  && now > saleItem[i].timeAvail && saleItem[i].user == msg.sender){
                 totalTokens = totalTokens.add(saleItem[i].value);
             }
         }

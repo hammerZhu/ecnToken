@@ -2,32 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d55ce6b-23d0-467b-8dab-a429b7d2464f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/ecnToken.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/ecnToken_node_modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/javascripts/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/stylesheets/app.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cdata/geth/LOCK" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cdata/geth/chaindata/000006.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cdata/geth/chaindata/000008.ldb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cdata/geth/chaindata/000009.ldb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cdata/geth/chaindata/CURRENT" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cdata/geth/chaindata/LOCK" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cdata/geth/chaindata/LOG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cdata/geth/chaindata/MANIFEST-000007" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cdata/geth/nodekey" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cdata/geth/transactions.rlp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cdata/history" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cdata/keystore/key3bd8.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cdata/keystore/key8808.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/EcnTokenSaleMuti.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contracts/EcnTokenSaleMulti.sol" afterPath="$PROJECT_DIR$/contracts/EcnTokenSaleMulti.sol" />
     </list>
     <ignored path="ecnToken.iws" />
@@ -82,8 +56,8 @@
       <file leaf-file-name="EcnTokenSaleMulti.sol" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contracts/EcnTokenSaleMulti.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-324">
-              <caret line="138" column="22" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="22" />
+            <state relative-caret-position="512">
+              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -393,12 +367,12 @@
       <workItem from="1527126304539" duration="1342000" />
       <workItem from="1527127861263" duration="3763000" />
       <workItem from="1527661228112" duration="289000" />
-      <workItem from="1527748164820" duration="6875000" />
+      <workItem from="1527748164820" duration="6992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32276000" />
+    <option name="totallyTimeSpent" value="32393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="213" y="23" width="1537" height="1042" extended-state="0" />
@@ -805,8 +779,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contracts/EcnTokenSaleMulti.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
-          <caret line="138" column="22" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="22" />
+        <state relative-caret-position="512">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
           <folding />
         </state>
       </provider>
