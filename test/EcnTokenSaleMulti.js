@@ -4,7 +4,7 @@ import expectRevert from './helpers/expectRevert';
 import time from './helpers/time';
 
 const EcnToken = artifacts.require('../contracts/EcnToken.sol');
-const EcnTokenSaleMuti = artifacts.require('../contracts/EcnTokenSaleMuti.sol');
+const EcnTokenSaleMulti = artifacts.require('../contracts/EcnTokenSaleMulti.sol');
 
 // Before tests are run, 10 accounts are created with 10M ETH assigned to each.
 // see scripts/ dir for more information.
@@ -51,23 +51,23 @@ contract('EcnTokenSale', (accounts) => {
             token=await EcnToken.new();
         });
         it('should not allow to initialize with null token address', async () => {
-            await expectRevert(EcnTokenSaleMuti.new(null,token));
+            await expectRevert(EcnTokenSaleMulti.new(null,token));
         });
         it('should not allow to initialize with null funding recipient address', async () => {
-            await expectRevert(EcnTokenSaleMuti.new(null,token));
+            await expectRevert(EcnTokenSaleMulti.new(null,token));
         });
 
         it('should not allow to initialize with 0 funding recipient address', async () => {
-            await expectRevert(EcnTokenSaleMuti.new(0, token));
+            await expectRevert(EcnTokenSaleMulti.new(0, token));
         });
 
         it('should be initialized with 0 total sold tokens', async () => {
-            let sale = await EcnTokenSaleMuti.new(fundRecipient, token.address);
+            let sale = await EcnTokenSaleMulti.new(fundRecipient, token.address);
             assert.equal((await sale.tokensSold()), 0);
         });
 
         it('should be ownable', async () => {
-            let sale = await EcnTokenSaleMuti.new(fundRecipient,token.address);
+            let sale = await EcnTokenSaleMulti.new(fundRecipient,token.address);
             assert.equal(await sale.owner(), accounts[0]);
         });
     });
@@ -80,7 +80,7 @@ contract('EcnTokenSale', (accounts) => {
         let fundRecipient = accounts[0];
         beforeEach(async () => {
             token = await EcnToken.new();
-            sale = await EcnTokenSaleMuti.new(fundRecipient,token.address);
+            sale = await EcnTokenSaleMulti.new(fundRecipient,token.address);
             end = (await sale.endTime()).toNumber();
             //there are 10000 token can be sale
             await token.approve(sale.address,MAX_TOKENS.toNumber(),{from:fundRecipient});
@@ -142,7 +142,7 @@ console.log("ethOwnerAfterBuying"+ethOwnerAfterBuying);
         let fundRecipient = accounts[0];
         beforeEach(async () => {
             token = await EcnToken.new({from:fundRecipient});
-            sale = await EcnTokenSaleMuti.new(fundRecipient,token.address);
+            sale = await EcnTokenSaleMulti.new(fundRecipient,token.address);
             //end = (await sale.endTime()).toNumber();
             //there are 10000 token can be sale
             await token.approve(sale.address,MAX_TOKENS.toNumber(),{from:fundRecipient});

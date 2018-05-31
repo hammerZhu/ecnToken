@@ -6,4 +6,8 @@
 /coverage.json
 /allFiredEvents
 /scTopics
+/cdata
+/backup
+/.idea
+/app
 Unified.sol
